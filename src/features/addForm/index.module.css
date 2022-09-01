@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.container input {
+    padding: 1em 0.75em;
+}
+
+.container a {
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+}

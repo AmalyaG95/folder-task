@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 2em;  
+}
+
+.container textarea {
+    width: 100%;
+    height: 75vh;
+    resize: vertical;
+    margin: 1em 0;
+    padding: 1em;
+    font-size: 2em;
+}
+
+.saveButton {
+    width: fit-content;
+}

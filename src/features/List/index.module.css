@@ -1,0 +1,46 @@
+.container {
+    padding: 1em 3em 1em 1em;
+}
+
+.foldersWrapper, .filesWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    grid-template-rows: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 2em;
+}
+
+.foldersWrapper a, .filesWrapper a {
+    padding: 0 1.5em;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.25em;
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+
+.foldersWrapper svg:not(.deleteButton) {
+    font-size: 5em;
+    color: rgb(248, 194, 93);
+}
+
+.filesWrapper svg:not(.deleteButton) {
+    font-size: 5em;
+    color: rgb(61, 124, 240);
+}
+
+.wrapper {
+    position: relative;
+}
+
+.deleteButton {
+    position: absolute;
+    right: -15px;
+    top: 0;
+    cursor: pointer;
+}
