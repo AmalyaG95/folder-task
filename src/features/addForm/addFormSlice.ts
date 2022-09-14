@@ -71,6 +71,7 @@ export const addFormSlice = createSlice({
             }
             state.trash.folders = state.trash.folders.filter(folder => folder.id !== folderId);
             localStorage.setItem("trash", JSON.stringify(state.trash));
+            localStorage.setItem("folders", JSON.stringify(state.folders));
         },
         deleteFile: (state, action: PayloadAction<IFilePayload>) => {
             const {fileId, parentId} = action.payload;
